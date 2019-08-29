@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.757233620">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.757233620" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.757233620" name="Debug" parent="fr.ac6.managedbuild.config.gnu.cross.exe.debug" postannouncebuildStep="Generating binary and Printing size information:" postbuildStep="arm-none-eabi-objcopy -O binary &quot;${BuildArtifactFileBaseName}.elf&quot; &quot;${BuildArtifactFileBaseName}.bin&quot;; arm-none-eabi-size &quot;${BuildArtifactFileName}&quot;">
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.757233620." name="/" resourcePath="">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug.1318437816" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.75643701" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32L431CCTx" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.1774143430" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv4-sp-d16" valueType="enumerated"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.1504860705" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.hard" valueType="enumerated"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.2065041232" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="L431CC" valueType="string"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.868001461" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/WSPS}/Debug" id="fr.ac6.managedbuild.builder.gnu.cross.1460169581" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.262693226" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+								<option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.1604243138" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false"/>
+								<option id="gnu.c.compiler.option.debugging.level.1814524949" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.231799216" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32"/>
+									<listOptionValue builtIn="false" value="STM32L4"/>
+									<listOptionValue builtIn="false" value="STM32L431CCTx"/>
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="STM32L431xx"/>
+									<listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+								</option>
+								<option id="gnu.c.compiler.option.include.paths.256237117" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards\openmotestm\configure&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\projects\common\03oos_openwsn&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\kernel&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\c6t&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\cexample&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\cinfo&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\cjoin&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\cleds&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\csensors&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\cstorm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\cwellknown&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\rrt&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\uecho&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\uexpiration&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\uexpiration_monitor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\uinject&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\userialbridge&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\opencoap&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack\02a-MAClow&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack\03a-IPHC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack\03b-IPv6&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack\04-TRAN&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack\cross-layers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack\02b-MAChigh&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\drivers\common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards\openmotestm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\chips\S2LP\Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\chips\at86rf231&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\chips\S2LP&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards\openmotestm\library\CMSIS\Device\ST\STM32L4xx\Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards\openmotestm\library\CMSIS\Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards\openmotestm\library\inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards\openmotestm\library\inc\Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/core&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc&quot;"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.928335316" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.1674495479" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.1582417249" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+								<option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.1341367815" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1096044960" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1470459613" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32"/>
+									<listOptionValue builtIn="false" value="STM32L4"/>
+									<listOptionValue builtIn="false" value="STM32L431CCTx"/>
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="STM32L431xx"/>
+									<listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.include.paths.2004440071" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards\openmotestm\configure&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\projects\common\03oos_openwsn&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\kernel&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\c6t&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\cexample&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\cinfo&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\cjoin&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\cleds&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\csensors&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\cstorm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\cwellknown&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\rrt&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\uecho&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\uexpiration&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\uexpiration_monitor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\uinject&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\userialbridge&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\opencoap&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack\02a-MAClow&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack\03a-IPHC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack\03b-IPv6&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack\04-TRAN&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack\cross-layers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack\02b-MAChigh&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\drivers\common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards\openmotestm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\chips\S2LP\Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\chips\at86rf231&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\chips\S2LP&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards\openmotestm\library\CMSIS\Device\ST\STM32L4xx\Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards\openmotestm\library\CMSIS\Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards\openmotestm\library\inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards\openmotestm\library\inc\Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/core&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc&quot;"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.1953127502" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s.698464599" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.484249819" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.1089964802" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1291241947" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.808830762" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.721203033" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler">
+								<option id="gnu.both.asm.option.include.paths.1329862493" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards\openmotestm\configure&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\projects\common\03oos_openwsn&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\kernel&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\c6t&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\cexample&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\cinfo&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\cjoin&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\cleds&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\csensors&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\cstorm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\cwellknown&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\rrt&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\uecho&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\uexpiration&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\uexpiration_monitor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\uinject&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\userialbridge&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openapps\opencoap&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack\02a-MAClow&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack\03a-IPHC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack\03b-IPv6&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack\04-TRAN&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack\cross-layers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\openstack\02b-MAChigh&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\drivers\common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards\openmotestm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\chips\S2LP\Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\chips\at86rf231&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\chips\S2LP&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards\openmotestm\library\CMSIS\Device\ST\STM32L4xx\Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards\openmotestm\library\CMSIS\Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards\openmotestm\library\inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/openwsn\bsp\boards\openmotestm\library\inc\Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/core&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1307917270" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.1970769726" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="Src|Inc" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="HAL_Driver"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="inc"/>
+						<entry excluding="bsp/boards/openmotestm/uart-lcg20180413.c|projects/openmotestm|projects/common/03oos_sniffer|projects/common/03oos_mercator|projects/common/03oos_macpong|projects/common/02drv_sensors|projects/common/02drv_opentimers2|projects/common/02drv_opentimers|projects/common/02drv_openserial|projects/common/01bsp_uart|projects/common/01bsp_spi|projects/common/01bsp_sctimer|projects/common/01bsp_radiotimer|projects/common/01bsp_radio_tx|projects/common/01bsp_radio_rx|projects/common/01bsp_radio|projects/common/01bsp_leds|projects/common/01bsp_eui64|projects/common/01bsp_debugpins|projects/common/01bsp_cryptoengine|projects/common/01bsp_closetimers|projects/common/01bsp_bsp_timer|projects/common/01bsp_bothtimers|openstack/02a-MAClow/adaptive_sync_zyx.c|bsp/boards/openmotestm/startup.s|bsp/boards/openmotestm/sctimerRTC.c|bsp/boards/openmotestm/library/src/stm32l4xx_hal_timebase_tim_template.c|bsp/boards/openmotestm/library/src/stm32l4xx_hal_msp_template.c|bsp/boards/openmotestm/library/CMSIS/Device/ST/STM32L4xx/Source|bsp/boards/openmotestm/library/CMSIS/DSP_Lib|bsp/boards/openmotestm/library/CMSIS/RTOS|bsp/boards/openmotestm/ewarm|bsp/boards/z1|bsp/boards/wsn430v14|bsp/boards/wsn430v13b|bsp/boards/telosb|bsp/boards/silabs-ezr32wg|bsp/boards/scum|bsp/boards/samr21_xpro|bsp/boards/python|bsp/boards/openmote-cc2538|bsp/boards/openmote-b|bsp/boards/iot-lab_M3|bsp/boards/iot-lab_A8-M3|bsp/boards/gina|bsp/boards/ez430-rf2500|bsp/boards/eldorado|bsp/boards/derfmega|bsp/boards/common|bsp/boards/cc1200dk|bsp/boards/agilefox|bsp/chips/si70x|bsp/chips/sht21|bsp/chips/sht11|bsp/chips/max44009|bsp/chips/cc2420|bsp/chips/cc1200|bsp/chips/cc1101|bsp/chips/at86rf233|bsp/chips/at86rf215|bsp/chips/adxl346|drivers/gina|drivers/z1|kernel/freertos|docs|bootloader|openwsnSTM32L431.si4project|projects/z1|projects/wsn430v14|projects/wsn430v13b|projects/telosb|projects/silabs-ezr32wg|projects/scum|projects/samr21_xpro|projects/python_vs13|projects/python|projects/openmote-cc2538|projects/openmote-b|projects/iot-lab_M3|projects/iot-lab_A8-M3|projects/gina|projects/ez430-rf2500|projects/derfmega|projects/cc1200dk|projects/at86rf215|projects/agilefox|site_scons|tools" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="openwsn"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.201675123">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.201675123" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.201675123" name="Release" parent="fr.ac6.managedbuild.config.gnu.cross.exe.release" postannouncebuildStep="Generating binary and Printing size information:" postbuildStep="arm-none-eabi-objcopy -O binary &quot;${BuildArtifactFileBaseName}.elf&quot; &quot;${BuildArtifactFileBaseName}.bin&quot;; arm-none-eabi-size -B &quot;${BuildArtifactFileName}&quot;">
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.release.201675123." name="/" resourcePath="">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release.740892502" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.1699505772" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32L431CCTx" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.1039721875" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv4-sp-d16" valueType="enumerated"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.373145670" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.hard" valueType="enumerated"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.1720183791" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="L431CC" valueType="string"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.1766694190" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/WSPS}/Release" id="fr.ac6.managedbuild.builder.gnu.cross.865032147" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1063808774" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+								<option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.786718333" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1534697732" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1645891684" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32"/>
+									<listOptionValue builtIn="false" value="STM32L4"/>
+									<listOptionValue builtIn="false" value="STM32L431CCTx"/>
+									<listOptionValue builtIn="false" value="STM32L431xx"/>
+									<listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+								</option>
+								<option id="gnu.c.compiler.option.include.paths.1410021986" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/core&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc&quot;"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.877523652" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.938917315" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.1917027945" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+								<option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.176189307" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.cpp.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.890261393" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1186262182" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32"/>
+									<listOptionValue builtIn="false" value="STM32L4"/>
+									<listOptionValue builtIn="false" value="STM32L431CCTx"/>
+									<listOptionValue builtIn="false" value="STM32L431xx"/>
+									<listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.include.paths.2058358261" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/core&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc&quot;"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.153688980" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s.1446643361" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.2057226597" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.335941058" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.273724017" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.1757625019" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release.338408635" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release">
+								<option id="gnu.both.asm.option.include.paths.697186239" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/core&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1900058394" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.1346852579" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="Src|Inc" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="HAL_Driver"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="inc"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="openwsn/bsp/chips/at86rf231"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="openwsn/projects/common/03oos_openwsn"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="WSPS.fr.ac6.managedbuild.target.gnu.cross.exe.252565419" name="Executable" projectType="fr.ac6.managedbuild.target.gnu.cross.exe"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.debug.757233620;fr.ac6.managedbuild.config.gnu.cross.exe.debug.757233620.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.262693226;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.928335316">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.debug.757233620;fr.ac6.managedbuild.config.gnu.cross.exe.debug.757233620.;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.1582417249;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.1953127502">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.release.201675123;fr.ac6.managedbuild.config.gnu.cross.exe.release.201675123.;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.1917027945;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.153688980">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.release.201675123;fr.ac6.managedbuild.config.gnu.cross.exe.release.201675123.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1063808774;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.877523652">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/WSPS"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/WSPS"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+</cproject>

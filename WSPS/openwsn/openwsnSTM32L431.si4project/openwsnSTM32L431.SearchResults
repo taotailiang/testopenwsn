@@ -1,0 +1,8 @@
+---- OFFSETADDR_MYPARENT_MAC_ADDRESS Matches (4 in 4 files) ----
+idmanager_init in idmanager.c (openstack\cross-layers) : 	memcpy(idmanager_vars.myParentID.addr_64b,(void const*)(BASEADDR_FLASH_PARAMETER+OFFSETADDR_MYPARENT_MAC_ADDRESS),8);
+sixtop_sendSepecialKA in sixtop.c (openstack\02b-MAChigh) :    	///memcpy(&(kaPkt->l2_nextORpreviousHop),(open_addr_t *)(ADDR_PARAMENT_STARTADDRESS+OFFSETADDR_MYPARENT_MAC_ADDRESS),sizeof(open_addr_t));
+ReadRfParaAck in zyx.c (bsp\boards\openmotestm\configure) : 					memcpy( BufPtr ,PARAMENTER_WRITEFLASH_BUF + OFFSETADDR_MYPARENT_MAC_ADDRESS,MacAddrLenth );
+zyx.h (bsp\boards\openmotestm\configure) line 82 : #define OFFSETADDR_MYPARENT_MAC_ADDRESS 0x000C//parent mac address 
+---- OFFSETADDR_MYPARENT_MAC_ADDRESS Search Errors Encountered (1) ----
+The following 1 files could not be processed:
+C:\Users\zyx\Desktop\Copy of zyx.c : File could not be opened.
